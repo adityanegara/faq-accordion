@@ -1,0 +1,33 @@
+@use './variables.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $main-font;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient($soft-violet, $soft-blue);
+}
+
+p {
+  margin: 0;
+}
+
+input,
+button,
+a {
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+button {
+  font-family: $main-font;
+}
