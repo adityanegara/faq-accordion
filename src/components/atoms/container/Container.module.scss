@@ -2,5 +2,13 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25vh;
+  margin-top: 20vh;
+  margin-bottom: 3vh;
+}
+
+@media only screen and (min-width: 750px) {
+  .container {
+    width: 75%;
+    margin-top: 12vh;
+  }
 }

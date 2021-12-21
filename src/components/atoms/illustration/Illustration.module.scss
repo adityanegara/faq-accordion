@@ -1,8 +1,34 @@
-.illustration {
+.illustration-mobile {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -68%);
+  transform: translate(-50%, -125%);
+}
+
+.illustration-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 500px) {
+  .illustration-mobile {
+    width: 50%;
+    transform: translate(-50%, -115%);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .illustration-mobile {
+    transform: translate(-50%, -110%);
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .illustration-mobile {
+    display: none;
+  }
+  .illustration-desktop {
+    display: block;
+  }
 }
