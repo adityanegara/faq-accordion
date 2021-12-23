@@ -1,4 +1,4 @@
-.card {
+.card-mobile {
   position: relative;
   background-color: white;
   padding: 15px;
@@ -8,14 +8,30 @@
   background-position: center top;
 }
 
+.card-desktop {
+  display: none;
+  position: relative;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-position: -250px -100px;
+  background-size: 60% auto;
+}
+
 @media only screen and (min-width: 600px) {
-  .card {
+  .card-mobile {
     background-size: 250px auto;
   }
 }
 
-@media only screen and (min-width: 700px) {
-  .card {
+@media only screen and (min-width: 1000px) {
+  .card-mobile {
     background-size: 300px auto;
+    display: none;
+  }
+  .card-desktop {
+    display: block;
   }
 }

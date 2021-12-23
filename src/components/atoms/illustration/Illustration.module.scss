@@ -24,11 +24,42 @@
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 700px) {
+  .illustration-mobile {
+    width: 40%;
+    transform: translate(-50%, -120%);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .illustration-mobile {
+    transform: translate(-50%, -110%);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .illustration-mobile {
+    width: 38%;
+    transform: translate(-50%, -105%);
+  }
+}
+@media only screen and (min-width: 1000px) {
   .illustration-mobile {
     display: none;
   }
   .illustration-desktop {
     display: block;
   }
+}
+
+.main-illustration {
+  position: relative;
+  top: 25px;
+  right: 60px;
+}
+
+.box-illustration {
+  position: relative;
+  bottom: 180px;
+  right: 110px;
 }

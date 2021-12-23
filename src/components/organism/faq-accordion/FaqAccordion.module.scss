@@ -2,17 +2,33 @@
 
 .title {
   text-align: center;
+  text-align: center;
   margin-top: 15vh;
+  font-weight: bold;
+  font-size: 2rem;
+
   font-weight: bold;
   font-size: 2rem;
 }
 
-.faq-accordion {
-}
+@media only screen and (min-width: 1000px) {
+  .title {
+    text-align: left;
+    margin-top: 5vh;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-@media only screen and (min-width: 750px) {
   .faq-accordion {
     display: flex;
     flex-direction: row;
+  }
+
+  .faq-container {
+    width: 50%;
+  }
+  .illustration-container {
+    width: 50%;
   }
 }

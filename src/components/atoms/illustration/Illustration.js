@@ -7,8 +7,8 @@ const Illustration = ({illustrationMobile, illustrationDesktop, illustrationBox}
             <img alt='illustration' src={illustrationMobile}/>
         </div>
         <div className={styles['illustration-desktop']}>
-          <img alt='illustration' src={illustrationDesktop}/>
-          <img alt='illustration' src={illustrationBox}/>
+          <img alt='illustration' className={styles['main-illustration']} src={illustrationDesktop}/>
+          <img alt='box' className={styles['box-illustration']} src={illustrationBox}/>
         </div>
         </>
     )
